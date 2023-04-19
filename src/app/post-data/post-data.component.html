@@ -1,0 +1,34 @@
+<div class="form">
+
+    <form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+        <input type="text" ngModel name="buCode" placeholder="Enter Bu Code">
+        <br><br>
+        <input type="text" ngModel name="Status" placeholder="Enter Status">
+        <br><br>
+        <input type="text" ngModel name="OpenDate" placeholder="Enter Open Date">
+        <br><br>
+        <input type="text" ngModel name="Address" placeholder="Enter Address">
+        <br><br>
+        <input type="text" ngModel name="City" placeholder="Enter City">
+        <br><br>
+        <input type="text" ngModel name="State" placeholder="Enter State">
+        <br><br>
+        <input type="text" ngModel name="Country" placeholder="Enter Country">
+        <br><br>
+        <input type="text" ngModel name="Currency" placeholder="Enter Currency">
+        <br><br>
+        <input type="text" ngModel name="PhoneNumber" placeholder="Enter Phone Number">
+        <br><br>
+        <input type="text" ngModel name="BusinessHours" placeholder="Enter Business Hours">
+        <br><br>
+        <input type="text" ngModel name="Latitude" placeholder="Enter Latitude">
+        <br><br>
+        <input type="text" ngModel name="Longitude" placeholder="Enter Longitude">
+        <br><br>
+    <button class="btn btn-primary" type="button" >Post Data</button>
+    
+    </form>
+    
+
+</div>
+

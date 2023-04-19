@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" style="cursor: pointer" class="navbar-brand">Welcome</a>
+    </div>
+
+    <div class="navbar-default">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active" *ngIf="!user">
+          <a routerLinkActive routerLink="/login">Authenticate</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="user">
+          <a routerLink="/display">Get Api Data</a>
+        </li>
+        <li routerLinkActive="active"*ngIf="user">
+          <a routerLinkActive routerLink="/post">Post Api Data</a>
+        </li>
+        
+        <ul  
+        class="nav navbar-nav navbar-right" >
+            <li *ngIf="user">
+                <a style="cursor: pointer" (click)="onLogout()">Logout</a>
+            </li>
+        </ul>
+    
+    </ul>
+   
+    </div>
+  </div>
+</nav> 

@@ -1,0 +1,35 @@
+<p>Our Current Data in Api is</p>
+<div style="margin:30px">
+    <table border="1">
+        <tr>
+            <th>BuCode</th>
+            <th>Status</th>
+            <th>OpenDate</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Currency</th>
+            <th>Phone</th>
+            <th>Business Hours</th>
+            <th>Latitude</th>
+            <th>longitude</th>
+            
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{item.buCode}}</td>
+            <td>{{item.status}}</td>
+            <td>{{item.openedDate}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.state}}</td>
+            <td>{{item.country}}</td>
+            <td>{{item.currency}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.businessHours}}</td>
+            <td>{{item.lattitude}}</td>
+            <td>{{item.longitude}}</td>
+            
+        </tr>
+    </table>
+</div>
